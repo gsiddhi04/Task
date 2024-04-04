@@ -1,6 +1,67 @@
-.container{
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    /* opacity: -1; */
+}
+
+body::before{
+    content: " ";
+    background-image: url(finger-2956974_1280.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.head{
     display: flex;
-    border: 2px solid red;
-    margin: 4px;
     flex-direction: column;
+    margin: 94px 25px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+   
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    margin: 94px 25px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container{
+    border:2px solid blue;
+    border-radius: 10px;
+    background-color: rgb(218, 200, 203);
+    margin: 108px;
+    padding: 42px;
+}
+
+.h-center{
+    font-size: 70px;
+    color: rgb(226, 229, 150);
+}
+
+.h2-center a:link, a:visited{
+    text-decoration: none;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 36px;
+    color: rgb(141, 205, 119);
+}
+.h2-center a:hover{
+    color: black;
+    background-color: white;
+}
+.center{
+    text-align: center;
+}
+footer{
+    background-color: rgb(247, 241, 241);
+    color: rgb(211, 111, 111);
+    padding: 5px 10px;
 }

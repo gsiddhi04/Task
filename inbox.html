@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+    <style>
+        body::before {
+            content: " ";
+            background-image: url(email-1975018_1280.png);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        .detail {
+            border: 2px solid black;
+            margin: 6px;
+            padding: 1px;
+            background-color: rgb(233, 241, 182);
+        }
+
+        .detail ul {
+            display: flex;
+        }
+
+        .item {
+            list-style: none;
+        }
+
+        .item a:link,
+        a:visited {
+            text-decoration: none;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 36px;
+            color: rgb(233, 121, 225);
+        }
+
+        .item a:hover {
+            color: black;
+            background-color: white;
+        }
+
+
+
+        #sub {
+            /* border: 2px solid red; */
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="details">
+        <div class="detail">
+            <ul>
+                <div id="sub">
+                    <li class="item"><a href="message.html">Sender</a></li>
+                </div>
+                <div id="sub">
+                    <li class="item"><a href="message.html">Timestamp</a></li>
+                </div>
+                <div id="sub">
+                    <li class="item">
+                        <a href="message.html">
+                            <b>Subject:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                            sequi.</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="detail">
+            <ul>
+                <div id="sub">
+                    <li class="item"><a href="message.html">Sender</a></li>
+                </div>
+                <div id="sub">
+                    <li class="item"><a href="message.html">Timestamp</a></li>
+                </div>
+                <div id="sub">
+                    <li class="item">
+                        <a href="message.html">
+                            <b>Subject:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                            sequi.</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="detail">
+            <ul>
+                <div id="sub">
+                    <li class="item"><a href="message.html">Sender</a></li>
+                </div>
+                <div id="sub">
+                    <li class="item"><a href="message.html">Timestamp</a></li>
+                </div>
+                <div id="sub">
+                    <li class="item">
+                        <a href="message.html">
+                            <b>Subject:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+                            sequi.</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
