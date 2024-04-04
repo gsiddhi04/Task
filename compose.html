@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose Mail</title>
+    <style>
+        body{
+            background-color: rgb(198, 231, 236);
+            overflow: hidden;
+        }
+        #form {
+            /* border: 2px solid red; */
+            margin-top: 10px;
+            /* padding: 0px 20px; */
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        <!-- #form::before {
+            content: "";
+            background-color: rgb(198, 231, 236);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.85;
+            z-index: -1;
+        } -->
+
+        .contact {
+            display: flex;
+            /* position: relative; */
+            justify-content: center;
+            align-items: center;
+            /* margin: 12px; */
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 0.2rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .contact form {
+            width: 100%;
+        }
+
+        .contact label {
+            font-size: 1.1rem;
+            font-family: 'Diphylleia', serif;
+            font-weight: bold;
+        }
+
+        .btn1 {
+            padding: 15px;
+            margin: 10px;
+            font-size: 25px;
+            background-color: cyan;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <section id="form">
+        <h1 class="h-primary">Compose Mail</h1>
+        <div class="contact">
+            <form action="no-action.php">
+                <div class="formgroup">
+                    <label for="Name">To:</label>
+                    <input type="text" name="Name" id="Name" placeholder="Email@gmail.com">
+                </div>
+                <div class="formgroup">
+                    <label for="Email">Subject:</label>
+                    <input type="email" name="Email" id="Email" placeholder="Enter subject">
+                </div>
+
+                <div class="formgroup">
+                    <label for="Message">Message:</label>
+                    <textarea name="Message" id="Message" cols="20" rows="18" placeholder="Enter mail"></textarea>
+                </div>
+                <div class="contact">
+                    <button class="btn1">Send Now</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>
